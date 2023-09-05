@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #1A1A1A;
+    --transparent-primary-color: #ABABAB;
+    --secondary-color: #5BA0E0;
+}
+
+/* estilização do scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--transparent-primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Raleway', sans-serif;
+    color: #FFF;
+    font-weight: 400;
+}
+
+section {
+    height: 80vh;
+}
+
+/* estilização do header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+    margin: 0 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-bar {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar li:nth-child(-n+3) {
+    margin-right: 18px;
+}
+
+.nav-bar a {
+    font-size: 1.25rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-bar a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-bar a::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: 0.3s ease-in-out;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+}
+
+/* estilização do main */
+
+main {
+    margin-top: 83px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(41.65% 41.65% at 50% 50%, #2E2E2D 0%, rgba(39, 39, 39, 0.00) 100%);
+}
+
+.hero-section div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    margin-bottom: -18px;
+}
+
+.hero-section div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.hero-section h3 {
+    font-size: 2rem;
+    color: var(--transparent-primary-color);
+    font-weight: 400;
+    margin-right: 32px;
+}
+
+.linha {
+    width: 498px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.hero-section h1 {
+    font-size: 5rem;
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+}
+
+.hero-section h2 {
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+    font-weight: 400;
+    width: 196px;
+    text-align: right;
+}
