@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1A1A1A;
-    --transparent-primary-color: #ABABAB;
+    --transparent-primary-color: #C9BFBF;
     --secondary-color: #5BA0E0;
 }
 
@@ -17,6 +17,8 @@
     background-color: var(--secondary-color);
     border-radius: 50px;
 }
+
+/* estlização das tags */
 * {
     margin: 0;
     padding: 0;
@@ -32,8 +34,14 @@ body {
 }
 
 section {
-    height: 80vh;
+    height: 100vh;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* estilização do header */
 
@@ -48,12 +56,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
     background-color: var(--primary-color);
-}
-
-header a{
-    text-decoration: none;
-    color: inherit;
 }
 
 .nav-bar {
@@ -93,7 +97,7 @@ header a{
 /* estilização do main */
 
 main {
-    margin-top: 105px;
+    margin-top: 40px;
 }
 
 .hero-section {
@@ -147,52 +151,158 @@ main {
 }
 
 /* estlização da section sobre */
-.sobre{
+.sobre {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 54px;
-    margin: 20px 0;
     position: relative;
     overflow: hidden;
 }
 
-.sobre div:nth-child(1){
+.sobre div:nth-child(1) {
     display: flex;
     justify-content: center;
 }
 
-.listLogo{
+.listLogo {
     display: flex;
     flex-direction: column;
     margin-right: 44px;
     gap: 24px;
 }
 
-.sobre h2{
+.sobre h1 {
     font-size: 3rem;
     font-family: 'Archivo Black', sans-serif;
 }
 
-.sobre .linha{
+.sobre .linha {
     height: 3px;
     width: 73px;
     border-radius: 5px;
     background-color: var(--secondary-color);
     margin-bottom: 10px;
 }
-.sobre p{
+
+.sobre p {
     font-size: 1.25rem;
     width: 526px;
     line-height: 30px;
 }
 
-.sobre h1{
+.sobre h2 {
     position: absolute;
     right: -110px;
-    top: -90px;
+    top: -30px;
     font-size: 18.75rem;
     font-family: 'Archivo Black', sans-serif;
     color: #242424;
     z-index: -1000;
+}
+
+/*estlização da section projetos*/
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 124px;
+    margin-top: 124px;
+    height: 100%;
+}
+
+.projetos h1 {
+    font-size: 3rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.projetos .linha {
+    height: 3px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.frame-projeto {
+    display: flex;
+    width: 100%;
+    gap: 116px;
+}
+
+.frame-projeto:nth-child(even){
+    justify-content: start;
+}
+.frame-projeto:nth-child(even) .img-projetos{
+    border-radius: 0 10px 10px 0;
+}
+
+.frame-projeto:nth-child(odd) {
+    justify-content: end;
+    flex-direction: row-reverse;
+}
+
+.frame-projeto:nth-child(odd) .img-projetos {
+    border-radius: 10px 0 0 10px;
+}
+
+.img-IMC {
+    border: 25px solid #EB4947;
+}
+
+.img-Exam {
+    border: 25px solid #2BC623;
+}
+
+.img-todolist {
+    border: 25px solid #617FEC;
+}
+
+.sobre-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.sobre-projeto h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2rem;
+}
+
+.sobre-projeto p {
+    font-size: 1.25rem;
+    width: 457px;
+    line-height: 30px;
+    color: var(--transparent-primary-color);
+}
+
+.tecnologias {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.circulo-logo {
+    width: 4px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 100%;
+}
+
+.btn-saiba-mais {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 266px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+.btn-saiba-mais a {
+    font-size: 1.25rem;
+    padding: 12px 80px;
 }
