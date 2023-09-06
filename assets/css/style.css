@@ -15,12 +15,13 @@
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--secondary-color);
+    border-radius: 50px;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -41,11 +42,18 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 83px;
-    margin: 0 120px;
+    width: 100%;
+    padding: 0 120px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    background-color: var(--primary-color);
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .nav-bar {
@@ -85,7 +93,7 @@ header {
 /* estilização do main */
 
 main {
-    margin-top: 83px;
+    margin-top: 105px;
 }
 
 .hero-section {
@@ -117,7 +125,7 @@ main {
     margin-right: 32px;
 }
 
-.linha {
+.hero-section .linha {
     width: 498px;
     height: 4px;
     background-color: var(--secondary-color);
@@ -136,4 +144,55 @@ main {
     font-weight: 400;
     width: 196px;
     text-align: right;
+}
+
+/* estlização da section sobre */
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre div:nth-child(1){
+    display: flex;
+    justify-content: center;
+}
+
+.listLogo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 44px;
+    gap: 24px;
+}
+
+.sobre h2{
+    font-size: 3rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.sobre .linha{
+    height: 3px;
+    width: 73px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+.sobre p{
+    font-size: 1.25rem;
+    width: 526px;
+    line-height: 30px;
+}
+
+.sobre h1{
+    position: absolute;
+    right: -110px;
+    top: -90px;
+    font-size: 18.75rem;
+    font-family: 'Archivo Black', sans-serif;
+    color: #242424;
+    z-index: -1000;
 }
