@@ -28,6 +28,9 @@
             <li>
                 <a href="#section-tecnologias">Tecnologias</a>
             </li>
+            <li>
+                <a href="#section-contatos">Contatos</a>
+            </li>
         </ul>
     </header>
 
@@ -52,11 +55,11 @@
                     <a href="https://www.instagram.com/alan.manoel517">
                         <img src="./assets/img/InstaLogo.png" alt="Logo-Inst">
                     </a>
-                    <a href="https://www.linkedin.com/in/alan-manoel">
-                        <img src="./assets/img/LikedinLogo.png" alt="Logo-Likedin">
-                    </a>
                     <a href="https://twitter.com/alanmanoel517">
                         <img src="./assets/img/XTwitterLogo.png" alt="Logo-Xtwitter">
+                    </a>
+                    <a href="https://www.linkedin.com/in/alan-manoel">
+                        <img src="./assets/img/LikedinLogo.png" alt="Logo-Likedin">
                     </a>
                     <a href="mailto:alanmanoel517@gmail.com">
                         <img src="./assets/img/EmailLogo.png" alt="Logo-Email">
@@ -131,6 +134,7 @@
                 </div>
             </div>
         </section>
+
         <section id="section-tecnologias" class="tecnologia">
             <div>
                 <h1>Tecnologias</h1>
@@ -163,9 +167,60 @@
                 </div>
             </div>
         </section>
+        <section id="section-contatos" class="contatos">
+            <div>
+                <h1>Contatos</h1>
+                <div class="linha"></div>
+            </div>
+            <div class="conteiner-contatos">
+                <form id="form" class="forms-contato">
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Nome:">
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email:">
+                    </div>
+                    <div>
+                        <input type="text" name="subject" id="subject" placeholder="Assunto:">
+                    </div>
+                    <div>
+                        <button id="button" value="Envi">Enviar</button>
+                    </div>
+                </form>
+                <div class="conteiner-logos">
+                    <div>
+                        <img src="./assets/img/GitHubLogo.png" alt="GitHubLogo">
+                        <a href="https://github.com/AlanManoel">AlanManoel</a>
+                    </div>
+                    <div>
+                        <img src="./assets/img/InstaLogo.png" alt="InstaLogo">
+                        <a href="https://www.instagram.com/alan.manoel517">@alan.manoel517</a>
+                    </div>
+                    <div>
+                        <img src="./assets/img/XTwitterLogo.png" alt="XTwitterLogo">
+                        <a href="https://twitter.com/alanmanoel517">@alan.manoel517</a>
+                    </div>
+                    <div>
+                        <img src="./assets/img/LikedinLogo.png" alt="LikedinLogo">
+                        <a href="https://www.linkedin.com/in/alan-manoel">in/alan-manoel</a>
+                    </div>
+                    <div>
+                        <img src="./assets/img/EmailLogo.png" alt="EmailLogo">
+                        <a href="mailto:alanmanoel517@gmail.com">alanmanoel517@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <h2>Contatos</h2>
+        </section>
     </main>
 
     <script src="./assets/js/script.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('S6xgeiCJuTi5tzbnU')
+    </script>
 </body>
 
 </html>
