@@ -43,7 +43,6 @@ a {
     color: inherit;
 }
 
-
 /* estilização do header */
 
 header {
@@ -66,7 +65,7 @@ header {
     list-style: none;
 }
 
-.nav-bar li:nth-child(-n+3) {
+.nav-bar li:nth-child(-n+4) {
     margin-right: 18px;
 }
 
@@ -347,7 +346,7 @@ main {
     gap: 10px;
 }
 
-.conteiner-tecnologias div{
+.conteiner-tecnologias div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -360,7 +359,110 @@ main {
     border-bottom: 3px solid var(--secondary-color);
 }
 
-.conteiner-tecnologias h4{
+.conteiner-tecnologias h4 {
     font-size: 1.25rem;
     font-weight: 400;
+}
+
+/*estlização da seção contatos*/
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contatos h1 {
+    font-size: 3rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.contatos .linha {
+    height: 3px;
+    width: 73px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+.conteiner-contatos{
+    display: flex;
+}
+
+.forms-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 10px;
+}
+
+.forms-contato input{
+    width: 635px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--gray-color);
+    border: none;
+    color: #FFF;
+    padding-left: 10px;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.forms-contato #subject{
+    height: 103px;
+}
+
+.forms-contato input:focus{
+    outline: 1px solid var(--secondary-color);
+}
+
+.forms-contato button{
+    width: 202px;
+    background-color: var(--gray-color);
+    height: 40px;
+    outline: 0;
+    color: #FFF;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.forms-contato button:hover{
+    transition: 300ms ease-in-out;
+    background-color: var(--secondary-color);
+}
+
+.conteiner-logos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.conteiner-logos div{
+    width: 318px;
+    height: 50px;
+    background-color: var(--gray-color);
+    border-radius: 4px;
+    border-bottom: 2px solid var(--secondary-color);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.contatos h2 {
+    position: absolute;
+    right: -600px;
+    top: -8px;
+    font-size: 18.75rem;
+    font-family: 'Archivo Black', sans-serif;
+    color: #242424;
+    z-index: -1000;
 }
