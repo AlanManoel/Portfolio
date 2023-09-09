@@ -165,7 +165,7 @@ main {
     justify-content: center;
 }
 
-.listLogo {
+.sobre .listLogo {
     display: flex;
     flex-direction: column;
     margin-right: 44px;
@@ -388,18 +388,18 @@ main {
     background-color: var(--secondary-color);
 }
 
-.conteiner-contatos{
+.conteiner-contatos {
     display: flex;
 }
 
-.forms-contato{
+.forms-contato {
     display: flex;
     flex-direction: column;
     gap: 24px;
     margin: 10px;
 }
 
-.forms-contato input{
+.forms-contato input {
     width: 635px;
     height: 40px;
     border-radius: 8px;
@@ -411,15 +411,15 @@ main {
     font-family: 'Raleway', sans-serif;
 }
 
-.forms-contato #subject{
+.forms-contato #subject {
     height: 103px;
 }
 
-.forms-contato input:focus{
+.forms-contato input:focus {
     outline: 1px solid var(--secondary-color);
 }
 
-.forms-contato button{
+.forms-contato button {
     width: 202px;
     background-color: var(--gray-color);
     height: 40px;
@@ -432,19 +432,19 @@ main {
     cursor: pointer;
 }
 
-.forms-contato button:hover{
+.forms-contato button:hover {
     transition: 300ms ease-in-out;
     background-color: var(--secondary-color);
 }
 
-.conteiner-logos{
+.conteiner-logos {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 10px;
 }
 
-.conteiner-logos div{
+.conteiner-logos div {
     width: 318px;
     height: 50px;
     background-color: var(--gray-color);
@@ -465,4 +465,31 @@ main {
     font-family: 'Archivo Black', sans-serif;
     color: #242424;
     z-index: -1000;
+}
+
+/* Estlização do footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1E1E1E;
+    padding: 10px 0;
+}
+
+footer .nav-bar a {
+    font-size: 1rem;
+}
+
+footer .listLogo {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+footer .listLogo img {
+    filter: grayscale(100%);
+}
+
+footer .listLogo img:hover {
+    filter: none;
 }
