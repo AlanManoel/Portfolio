@@ -193,8 +193,9 @@ main {
 
 .sobre h2 {
     position: absolute;
-    right: -110px;
-    top: -30px;
+    /* right: -110px;
+    top: -30px; */
+    transform: translate(315px, -145px);
     font-size: 18.75rem;
     font-family: 'Archivo Black', sans-serif;
     color: #242424;
@@ -310,9 +311,6 @@ main {
     height: 50px;
     border-radius: 5px;
     background-color: var(--secondary-color);
-}
-
-.btn-saiba-mais a {
     font-size: 1.25rem;
     padding: 12px 80px;
 }
@@ -444,7 +442,7 @@ main {
     margin: 10px;
 }
 
-.conteiner-logos div {
+.conteiner-logos a{
     width: 318px;
     height: 50px;
     background-color: var(--gray-color);
@@ -456,11 +454,11 @@ main {
     gap: 10px;
     padding-left: 10px;
 }
-
 .contatos h2 {
     position: absolute;
-    right: -600px;
-    top: -8px;
+    /* right: -600px;
+    top: -8px; */
+    transform: translate(545px, -120px);
     font-size: 18.75rem;
     font-family: 'Archivo Black', sans-serif;
     color: #242424;
