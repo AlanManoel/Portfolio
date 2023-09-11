@@ -7,6 +7,7 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway&display=swap" rel="stylesheet">
@@ -15,6 +16,11 @@
 <body>
     <header>
         <img src="./assets/img/Logo.png" alt="Logo">
+        <div class="menu-mobile">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <ul class="nav-bar">
             <li>
                 <a href="#section-hero">Inicio</a>
@@ -65,7 +71,7 @@
                         <img src="./assets/img/gmailLogo.png" alt="Logo-gmail">
                     </a>
                 </div>
-                <img src="./assets/img/MyImg.png" alt="MinhaImagem">
+                <img class="minhaImagem" src="./assets/img/MyImg.png" alt="MinhaImagem">
             </div>
             <div>
                 <h1>Sobre Mim</h1>
@@ -161,6 +167,7 @@
                 </div>
             </div>
         </section>
+
         <section id="section-contatos" class="contatos">
             <div>
                 <h1>Contatos</h1>
@@ -178,7 +185,7 @@
                         <input type="text" name="subject" id="subject" placeholder="Assunto:">
                     </div>
                     <div>
-                        <button id="button" value="Envi">Enviar</button>
+                        <button id="button" value="Envia">Enviar</button>
                     </div>
                 </form>
                 <div class="conteiner-logos">
