@@ -34,10 +34,6 @@ body {
     font-weight: 400;
 }
 
-section {
-    height: 100vh;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -94,22 +90,30 @@ header {
     width: 100%;
 }
 
-.menu-mobile{
+.menu-mobile {
     display: none;
+    width: 40px;
+    border-top: 3px solid var(--secondary-color);
+    border-radius: 2px;
     cursor: pointer;
 }
 
-.menu-mobile div{
+.menu-mobile::before,
+.menu-mobile::after {
+    content: "";
+    display: block;
     width: 40px;
-    height: 4px;
-    margin: 6px;
+    height: 3px;
     background-color: var(--secondary-color);
-    border-radius: 4px;
+    border-radius: 2px;
+    margin-top: 6px;
 }
+
+
 /* estilização do main */
 
 main {
-    margin-top: 40px;
+    margin-top: 83px;
 }
 
 .hero-section {
@@ -118,6 +122,7 @@ main {
     justify-content: center;
     align-items: center;
     background: radial-gradient(41.65% 41.65% at 50% 50%, #2E2E2D 0%, rgba(39, 39, 39, 0.00) 100%);
+    height: calc(100vh - 83px);
 }
 
 .hero-section div:nth-child(1) {
@@ -205,9 +210,7 @@ main {
 
 .sobre h2 {
     position: absolute;
-    /* right: -110px;
-    top: -30px; */
-    transform: translate(315px, -145px);
+    transform: translate(315px, -130px);
     font-size: 18.75rem;
     font-family: 'Archivo Black', sans-serif;
     color: #242424;
@@ -335,6 +338,7 @@ main {
     align-items: center;
     margin: 124px;
     gap: 60px;
+    height: 100vh;
 }
 
 .tecnologia h1 {
@@ -382,6 +386,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -504,3 +509,4 @@ footer .listLogo img {
 footer .listLogo img:hover {
     filter: none;
 }
+@me

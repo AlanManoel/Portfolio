@@ -1,0 +1,100 @@
+@media (max-width: 1260px) {
+    .frame-projeto {
+        gap: 40px;
+    }
+
+    .img-projetos {
+        height: 290px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .sobre {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sobre h2 {
+        visibility: hidden;
+    }
+
+    .sobre div:nth-child(1) {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .sobre div .listLogo {
+        flex-direction: row;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .frame-projeto {
+        gap: 20px;
+    }
+
+    .sobre-projeto p {
+        width: 400px;
+    }
+
+    .conteiner-tecnologias {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, 168px);
+        gap: 10px;
+    }
+
+    .forms-contato input {
+        width: 500px;
+    }
+}
+
+@media (max-width: 990px) {
+    .nav-bar {
+        display: block;
+        position: absolute;
+        top: 82px;
+        right: 0;
+        width: 100%;
+        background-color: #1A1A1A;
+        height: 0;
+        transition: 0.5s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .nav-bar a {
+        font-size: 2.5rem;
+    }
+
+    .nav-bar li {
+        margin: 60px 60px 0 18px;
+    }
+
+    .active {
+        height: calc(100vh - 83px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .menu-mobile-active {
+        border-top-color: transparent;
+        position: relative;
+    }
+
+    .menu-mobile-active::before {
+        transform: rotate(135deg);
+    }
+    .menu-mobile-active::after {
+        transform: rotate(-135deg);
+        position: absolute;
+        top: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        margin: 15px 0;
+    }
+}

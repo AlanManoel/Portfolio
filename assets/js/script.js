@@ -1,9 +1,11 @@
 const forms = document.querySelector('#form');
+
 const menuMobile = document.querySelector('.menu-mobile');
 
 menuMobile.addEventListener('click', function(){
     const navBar = document.querySelector('.nav-bar');
     navBar.classList.toggle('active');
+    menuMobile.classList.toggle('menu-mobile-active');
 });
 
 forms.addEventListener('submit', function (event) {
