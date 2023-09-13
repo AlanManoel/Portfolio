@@ -453,8 +453,8 @@ main {
 }
 
 .conteiner-logos {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr repeat(318px);
     gap: 10px;
     margin: 10px;
 }
@@ -474,8 +474,6 @@ main {
 
 .contatos h2 {
     position: absolute;
-    /* right: -600px;
-    top: -8px; */
     transform: translate(545px, -120px);
     font-size: 18.75rem;
     font-family: 'Archivo Black', sans-serif;
@@ -492,10 +490,6 @@ footer {
     padding: 10px 0;
 }
 
-footer .nav-bar a {
-    font-size: 1rem;
-}
-
 footer .listLogo {
     display: flex;
     gap: 28px;
@@ -509,4 +503,38 @@ footer .listLogo img {
 footer .listLogo img:hover {
     filter: none;
 }
-@me
+
+.nav-bar-footer {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar-footer li:nth-child(-n+4) {
+    margin-right: 18px;
+}
+
+.nav-bar-footer a {
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-bar-footer a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-bar-footer a::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: 0.3s ease-in-out;
+}
+
+.nav-bar-footer a:hover::after {
+    width: 100%;
+}
+
