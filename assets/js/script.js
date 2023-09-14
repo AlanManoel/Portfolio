@@ -1,11 +1,18 @@
 const forms = document.querySelector('#form');
-
 const menuMobile = document.querySelector('.menu-mobile');
+const links = document.querySelectorAll(".nav-bar a");
 
-menuMobile.addEventListener('click', function(){
-    const navBar = document.querySelector('.nav-bar');
+menuMobile.addEventListener('click', function () {
+  const navBar = document.querySelector('.nav-bar');
+  navBar.classList.toggle('active');
+  menuMobile.classList.toggle('menu-mobile-active');
+});
+
+links.forEach(function (link) {
+  const navBar = document.querySelector('.nav-bar');
+  link.addEventListener('click', function(){
     navBar.classList.toggle('active');
-    menuMobile.classList.toggle('menu-mobile-active');
+  });
 });
 
 forms.addEventListener('submit', function (event) {
@@ -25,8 +32,8 @@ forms.addEventListener('submit', function (event) {
     alert("Campo assunto vazio!")
   }
   else {
-    btn.innerHTML ='Enviando...';
-    
+    btn.innerHTML = 'Enviando...';
+
     const serviceID = 'default_service';
     const templateID = 'template_ixohtie';
 
