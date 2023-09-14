@@ -10,8 +10,9 @@ menuMobile.addEventListener('click', function () {
 
 links.forEach(function (link) {
   const navBar = document.querySelector('.nav-bar');
-  link.addEventListener('click', function(){
+  link.addEventListener('click', function () {
     navBar.classList.toggle('active');
+    menuMobile.classList.toggle('menu-mobile-active');
   });
 });
 
