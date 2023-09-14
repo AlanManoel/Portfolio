@@ -39,6 +39,17 @@ a {
     color: inherit;
 }
 
+@keyframes entrada-suave{
+    from{
+      transform: translateY(-100px);
+      opacity: .1;
+    }
+    to{
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
 /* estilização do header */
 
 header {
@@ -54,6 +65,7 @@ header {
     right: 0;
     z-index: 1000;
     background-color: var(--primary-color);
+    animation: entrada-suave 1s ease-in-out;
 }
 
 .nav-bar {
@@ -116,6 +128,7 @@ main {
     margin-top: 83px;
 }
 
+
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -123,6 +136,8 @@ main {
     align-items: center;
     background: radial-gradient(41.65% 41.65% at 50% 50%, #2E2E2D 0%, rgba(39, 39, 39, 0.00) 100%);
     height: calc(100vh - 83px);
+    
+    animation: entrada-suave 1s ease-in-out;
 }
 
 .hero-section div:nth-child(1) {
@@ -180,6 +195,10 @@ main {
 .sobre div:nth-child(1) {
     display: flex;
     justify-content: center;
+}
+
+.conteinter-text div:nth-child(1) {
+    flex-direction: column;
 }
 
 .sobre .listLogo {
